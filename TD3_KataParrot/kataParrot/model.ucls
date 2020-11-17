@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="fr.unlimil.iut.kataParrot.Parrot" project="kataParrot" 
     file="/kataParrot/src/main/java/fr/unlimil/iut/kataParrot/Parrot.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="209" y="181"/>    
+    <position height="-1" width="-1" x="489" y="238"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,21 +12,74 @@
   </class>  
   <enumeration id="2" language="java" name="fr.unlimil.iut.kataParrot.ParrotTypeEnum" project="kataParrot" 
     file="/kataParrot/src/main/java/fr/unlimil/iut/kataParrot/ParrotTypeEnum.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="205" x="424" y="115"/>    
+    <position height="-1" width="-1" x="483" y="99"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <association id="3">    
+  <class id="3" language="java" name="fr.unlimil.iut.kataParrot.AfricanParrot" project="kataParrot" 
+    file="/kataParrot/src/main/java/fr/unlimil/iut/kataParrot/AfricanParrot.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="484" y="424"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="fr.unlimil.iut.kataParrot.EuropeanParrot" project="kataParrot" 
+    file="/kataParrot/src/main/java/fr/unlimil/iut/kataParrot/EuropeanParrot.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="280" y="386"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="fr.unlimil.iut.kataParrot.NorwegianBlueParrot" project="kataParrot" 
+    file="/kataParrot/src/main/java/fr/unlimil/iut/kataParrot/NorwegianBlueParrot.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="714" y="409"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="fr.unlimil.iut.kataParrot.Constantes" project="kataParrot" 
+    file="/kataParrot/src/main/java/fr/unlimil/iut/kataParrot/Constantes.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="195" y="150"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="7">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="8">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <association id="9">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="4" name="type"/>      
-      <multiplicity id="5" minimum="0" maximum="1"/>    
+      <attribute id="10" name="type">        
+        <position height="0" width="0" x="-43" y="-83"/>      
+      </attribute>      
+      <multiplicity id="11" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-43" y="-83"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <generalization id="12">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
