@@ -3,8 +3,7 @@ package fr.unlimil.iut.kataParrot;
 public class EuropeanParrot extends Parrot {
 
 	public EuropeanParrot() {
-		super(ParrotTypeEnum.EUROPEAN, 0, 0, false);
-		// TODO Auto-generated constructor stub
+		super(ParrotTypeEnum.EUROPEAN, 0, false);
 	}
 	
 	@Override
