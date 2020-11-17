@@ -1,0 +1,12 @@
+1. Revue de code
+
+	1.a Voir DiagrammeDeClasse.png
+
+	1.b Il permet de créer différents types de perroquets. 
+	    Il permet ensuite de récupérer leur vitesse en fonction de leur type et différents éléments :
+		-  la vitesse de base pour les Européen
+		-  le nombre de noix de coco pour les Africains * le poids d'une noix de coco
+		-  le voltage et l'attribut isNailed pour les Norvégiens
+
+	1.c Problèmes : pas d'abstractions, des "chiffres magiques"
+	    
